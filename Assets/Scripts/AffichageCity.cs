@@ -15,7 +15,7 @@ public class AffichageCity : MonoBehaviour
         foreach (GameObject City in TempList)
         {
             LineRenderer Line = City.GetComponent<LineRenderer>();
-            Line.numPositions = 2;
+            Line.positionCount = 2;
             Line.SetColors(Color.black, Color.black);
             Line.SetWidth(0.1f,0.1f);
             Line.SetPosition(0, City.transform.position);
@@ -32,7 +32,7 @@ public class AffichageCity : MonoBehaviour
         foreach (GameObject City in TempList)
         {
             LineRenderer Line = City.GetComponent<LineRenderer>();
-            Line.numPositions = 2;
+            Line.positionCount = 2;
             Line.positionCount = 0;
         }
     }
